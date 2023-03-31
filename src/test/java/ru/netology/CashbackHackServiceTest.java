@@ -7,7 +7,7 @@ import static org.junit.Assert.*;
 public class CashbackHackServiceTest {
 
     @Test
-    void amountEqualLimit() {
+    public void amountEqualLimit() {
         CashbackHackService service = new CashbackHackService();
         int amount = 1000;
         int expected = 0;
@@ -16,7 +16,7 @@ public class CashbackHackServiceTest {
     }
 
     @Test
-    void AmountLessAccrualLimit() {
+    public void AmountLessAccrualLimit() {
         CashbackHackService service = new CashbackHackService();
         int amount = 999;
         int expected = 1;
@@ -25,7 +25,7 @@ public class CashbackHackServiceTest {
     }
 
     @Test
-    void AmountGreaterAccrualLimit() {
+    public void AmountGreaterAccrualLimit() {
         CashbackHackService service = new CashbackHackService();
         int amount = 1001;
         int expected = 999;
@@ -34,7 +34,7 @@ public class CashbackHackServiceTest {
     }
 
     @Test
-    void AmountAndOverLimit() {
+    public void AmountAndOverLimit() {
         CashbackHackService service = new CashbackHackService();
         int amount = 1_000_000;
         int expected = 0;
@@ -43,7 +43,7 @@ public class CashbackHackServiceTest {
     }
 
     @Test
-    void AmountAndUnderLimit() {
+    public void AmountAndUnderLimit() {
         CashbackHackService service = new CashbackHackService();
         int amount = 300;
         int expected = 700;
