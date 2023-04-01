@@ -43,6 +43,3 @@ out/
 !gradle/wrapper/gradle-wrapper.jar/
 !**/src/main/**
 !**/src/test/**
-/gradlew.bat
-/gradlew
-/settings.gradle
