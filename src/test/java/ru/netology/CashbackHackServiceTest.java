@@ -10,7 +10,7 @@ class CashbackHackServiceTest {
     void amountEqualLimit() {
         CashbackHackService service = new CashbackHackService();
         int amount = 1000;
-        int expected = 1000;
+        int expected = 0;
         int actual = service.remain(amount);
         assertEquals(expected, actual);
     }
@@ -37,7 +37,7 @@ class CashbackHackServiceTest {
     void AmountAndOverLimit() {
         CashbackHackService service = new CashbackHackService();
         int amount = 1_000_000;
-        int expected = 1000;
+        int expected = 0;
         int actual = service.remain(amount);
         assertEquals(expected, actual);
     }
@@ -50,4 +50,4 @@ class CashbackHackServiceTest {
         int actual = service.remain(amount);
         assertEquals(expected, actual);
     }
-}
+}g
